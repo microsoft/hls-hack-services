@@ -17,6 +17,8 @@ namespace Registration.Api.Controllers
     public class UserController : ControllerBase
     {
         const string USERADD_EVENTTYPE = "User.Added";
+        const string USERUPDATE_EVENTTYPE = "User.Updated";
+        const string USERDELETE_EVENTTYPE = "User.Removed";
 
         private readonly RegistrationContext _context;
         private readonly IMessageService _msgService;
@@ -75,6 +77,8 @@ namespace Registration.Api.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+
+                await _msgService.SendMessageAsync(new Message { Subject = "User Updated", EventType = USERUPDATE_EVENTTYPE, Data = new { id = user.Id, email = user.UserRegEmail } });
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -123,6 +127,8 @@ namespace Registration.Api.Controllers
 
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
+
+            await _msgService.SendMessageAsync(new Message { Subject = "User Removed", EventType = USERDELETE_EVENTTYPE, Data = new { id = user.Id, email = user.UserRegEmail } });
 
             return NoContent();
         }

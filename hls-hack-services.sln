@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFi
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailChimp", "MailChimp\MailChimp.csproj", "{0D453AD1-8C2A-4929-9E04-6164CE79B12A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,18 @@ Global
 		{592B5EC1-4648-4AB2-88DC-D8ADBEF2C90A}.Release|x64.Build.0 = Release|Any CPU
 		{592B5EC1-4648-4AB2-88DC-D8ADBEF2C90A}.Release|x86.ActiveCfg = Release|Any CPU
 		{592B5EC1-4648-4AB2-88DC-D8ADBEF2C90A}.Release|x86.Build.0 = Release|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Debug|x64.Build.0 = Debug|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Debug|x86.Build.0 = Debug|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Release|x64.ActiveCfg = Release|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Release|x64.Build.0 = Release|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Release|x86.ActiveCfg = Release|Any CPU
+		{0D453AD1-8C2A-4929-9E04-6164CE79B12A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
