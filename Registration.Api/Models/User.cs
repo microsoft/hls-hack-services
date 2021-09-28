@@ -13,15 +13,17 @@ namespace Registration.Api.Models
         public string UserRegEmail { get; set; }
         public string UserMSTeamsEmail { get; set; }
         public string UserDisplayName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string MySkills { get; set; }
         public string UserTimeCommitment { get; set; }
-        public Boolean Active { get; set; }
+        public bool Active { get; set; }
         public DateTime CreatedDate { get; set; }
         public string CreatedBy { get; set; }
         public DateTime ModifiedDate { get; set; }
         public string ModifiedBy { get; set; }
         public string ADUserId { get; set; }
-        public Boolean UserOptOut { get; set; } = false;
-        public Boolean MSFTOptIn { get; set; } = false;
+        public bool UserOptOut { get; set; } = false;
+        public bool MSFTOptIn { get; set; } = false;
     }
 }

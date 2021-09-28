@@ -28,4 +28,13 @@ namespace MailChimp.Models
         [JsonProperty("tags")]
         public Tag[] Tags { get; set; }
     }
+
+    public class UserEventData
+    {
+        [JsonProperty("id")]
+        public string Id { get; set; }
+        [JsonProperty("email")]
+        public string Email { get; set; }
+    }
+
 }
